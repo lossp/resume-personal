@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-
+    <script src="./iconfont.js"></script>
   <style>
   @font-face {
   font-family: 'iconfont';  /* project id 295851 */
@@ -161,7 +161,13 @@ span{
    
     <ul class="work-items">
       <div class="container">
-      <li class="item">Vue在线简历编辑器<span>(vue2.0, vuex)</span></li>
+      <li class="item">Vue在线简历编辑器<span>(vue2.0, vuex)</span>
+        <a href="https://lossp.github.io/vue-resume/dist/">
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+            </svg>
+        </a>
+      </li>
       <p>
           <h4>简介</h4>在线简历编辑器，实时展现数据，简历预览功能，支持多用户在线注册以及登陆
           <h4>具体细节</h4>整个项目基于vue2.0构建，对于数据管理使用的是Vuex，虽然数据双向绑定对于保持和预览区域同步显示有着极大的便利性，但是随着信息的输入，数据量变大，因此加入Vuex，实现数据单向绑定，方便数据管理，利用leanCloud实现了用户数据的保存，以及用户注册登陆，对于每个用户的数据独立，使用了ACL(Access Control List)
