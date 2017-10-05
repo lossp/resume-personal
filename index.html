@@ -128,6 +128,15 @@ span{
 .right-column .item:before{
   content:'\e603';
 }
+.icon{
+    width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
 
 
   </style>
@@ -166,18 +175,40 @@ span{
             <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-link"></use>
             </svg>
+            预览
+        </a>|
+        <a href="https://github.com/lossp/vue-resume">
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+            </svg>
+            代码
         </a>
       </li>
       <p>
           <h4>简介</h4>在线简历编辑器，实时展现数据，简历预览功能，支持多用户在线注册以及登陆
           <h4>具体细节</h4>整个项目基于vue2.0构建，对于数据管理使用的是Vuex，虽然数据双向绑定对于保持和预览区域同步显示有着极大的便利性，但是随着信息的输入，数据量变大，因此加入Vuex，实现数据单向绑定，方便数据管理，利用leanCloud实现了用户数据的保存，以及用户注册登陆，对于每个用户的数据独立，使用了ACL(Access Control List)
       </p>
-      <li class="item">Vue实现豆瓣app<span> (vue2.0, Vue-Router, Axios, scss)</span></li>
+      <li class="item">Vue实现豆瓣app<span> (vue2.0, Vue-Router, Axios, scss)</span>
+        <a href="https://github.com/lossp/douban-Vuejs">
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+            </svg>
+            代码
+        </a>
+    </li>
       <p>
           <h4>简介</h4>豆瓣app页面基本展示，通过api来实现模仿豆瓣app主页效果
           <h4>具体细节</h4>Vue2.0实现的豆瓣app项目，借用豆瓣API实现热门消息，图书，电影，音乐相关信息的展现，利用路由进行页面跳转，使用了vue第三方组件Swipe，实现了轮播效果，使用模块化组件思想，利用slot标签实现了对代码的重复利用，利用Vue的数据驱动思想，实现了在滑动条拉到最底部时候数据自行加载，对于样式的书写采用了scss语法，使样式的设计书写更加简洁
       </p>
-      <li class="item">Nodejs便利贴<span> (Nodejs, Oauth2.0, less, webpack)</span></li>
+      <li class="item">Nodejs便利贴<span> (Nodejs, Oauth2.0, less, webpack)</span>
+        <a href="https://github.com/lossp/note-node-express">
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+            </svg>
+            代码
+        </a>
+    
+    </li>
       <p>
           <h4>简介</h4>实现的在线便利贴，可以实现登陆之后进行对便利贴的增删改查
           <h4>具体细节</h4>利用Nodejs平台实现的项目，在前端方面，使用了模块化开发方式，webpack以及loader和插件的使用；在后端方面，Express框架的使用，以及路由、中间件的使用。对于数据保存，使用了sqlite3来保存数据，登陆方面上，利用Oauth2.0实现了利用github账户进行登陆。
@@ -208,9 +239,38 @@ span{
     <div class="left-items">
       <h3 class="iconfont">Projects</h3>
       <p>
-          <h4>天气查询工具</h4>利用nodejs制作的天气命令行查询工具
-          <h4>瀑布流的新闻网页</h4>利用瀑布流以及懒加载实现的新闻页面，使用新浪api
-          <h4>轮播组件</h4>利用jquery实现的轮播组件
+          <h4>天气查询工具
+                <a href="https://github.com/lossp/weather-demo">
+                    <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-link"></use>
+                    </svg>
+                    代码
+                </a>
+          </h4>利用nodejs制作的天气命令行查询工具
+          <h4>瀑布流的新闻网页
+                <a href="https://github.com/lossp/waterfall-newspage">
+                    <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-link"></use>
+                    </svg>
+                    代码
+                </a>
+          </h4>利用瀑布流以及懒加载实现的新闻页面，使用新浪api
+          <h4>轮播组件
+                <a href="https://github.com/lossp/carousel-OO">
+                    <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-link"></use>
+                    </svg>
+                    代码
+                </a>
+          </h4>利用jquery实现的轮播组件
+          <h4>瀑布流组件
+                <a href="https://github.com/lossp/waterfall">
+                    <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-link"></use>
+                    </svg>
+                    代码
+                </a>
+          </h4>利用jquery实现的瀑布流组件
       </p>
     </div>
     </div>
