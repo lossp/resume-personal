@@ -152,7 +152,7 @@ h2 {
     </div>
     <div class="description">
       <h1>孟凡皓</h1>
-      <p>应聘职位:Node.js后端工程师</p>
+      <p>应聘职位:Java后端工程师</p>
     </div>
     <div class="contacts">
       <div class="box">
@@ -168,29 +168,57 @@ h2 {
     
   <div class="work-experience">
     <div class="box">
-     <h2>工作经历(成都雨诺信息有限公司)</h2>
+     <h2>工作经历(成都雨诺信息有限公司) </h2>
+     <h2>2017年年底至今</h2>
+     <h2>开发语言: Node.js</h2>
     </div>
    
     <ul class="work-items">
       <div class="container">
-      <li class="item">Docker
-      </li>
-      <p>
-          <h4>简介</h4>负责调研Docker化对于整个开发的效率提升以及统一开发环境
-          <h4>具体细节</h4>在基于团队中开发环境不统一的情况下，调研Docker工具，通过统一数据库版本，node版本，通过Docker的编排工具(docker-compose)来启动开发基本环境
-      </p>
-      <li class="item">B2B商城支付系统
+      <li class="item"><STRONG>B2B商城支付系统</STRONG>
     </li>
       <p>
           <h4>简介</h4>B2B商城支付中心
-          <h4>具体细节</h4>根据相关UML设计图来封装相关银联以及支付宝的相关SDK，同时根据DDD架构来完成相关的支付逻辑
+          <h4>具体细节</h4>根据相关UML设计图来封装相关银联以及支付宝的相关SDK，同时根据DDD架构来完成相关的支付逻辑，在银联提供的Java版本的SDK上将JAVA版本翻译为Node.js版本并且封装为完整的SDK
       </p>
-      <li class="item">DDD架构相关学习
-    </li>
+      <li class="item"><STRONG>维护原有B2B项目的相关需求</STRONG>
+      </li>
       <p>
-          <h4>简介</h4>新项目2.0的开发
-          <h4>具体细节</h4>在新项目的开发阶段，由于原本架构是传统MVC架构，由于业务在之后演进中变得愈加复杂，在此项目中采用DDD(Domain Drive Development)架构方式来规划项目，完整的按照OOP方式来完成业务逻辑，同时完善Node.js中关于错误处理的部分，在与数据库交接部分采用Sequelize工具，将数据完全模型化，不用直接采用SQL语句，维护更加方便
+          <h4>简介</h4>维护支付中心以及促销中心两个微服务端的代码
+          <h4>具体细节</h4>为了避免在原有代码上累加更多的业务代码，通过重新构建了两个微服务项目，一个为支付中心，另一个为促销中心，通过HTTP通讯方式来对原有服务进行相应的拆分。
       </p>
+    </ul>
+   </div>
+
+   <div class="work-experience">
+     <div class="box">
+       <h2>个人项目 Java</h2>
+     </div>
+
+    <ul class="work-items">
+      <div class="container">
+        <li class="item"><STRONG>IPC通讯方式</STRONG>
+        </li>
+        <p>
+          <h4>简介</h4>通过共享文件方式来完成不同的进程之间的通讯
+          <h4>具体细节</h4>进程之间通讯不像线程之间通讯一样，可以通过语言内部调用进行实现。目前比较常用的方式即Socket方式进行通讯，之前Node.js维护的不同服务之间的调用也可以认为是IPC调用。此次选择了Memory Shared File方式进行通讯。不同进程通过访问相同的共享文件来达到相互通讯目的。选用Ant工具进行相应打包处理，同时也了解Ant打包的工作流程
+        </p>
+        <li class="item"><STRONG>文件服务器</STRONG>
+        </li>
+        <p>
+          <h4>简介</h4>在Spring Boot基础搭建文件服务器
+          <h4>具体细节</h4>
+          Spring Boot的基础上搭建文件服务器，使用FTP协议进行文件上传(之后会改进为HTTP方式)，可以使用HTTP方式对文件进行下载，通过Java读取文件流的方式来完成相应的上传以及下载功能，同时集成Swagger2.0作为接口测试页面。使用log4j对日记进行相应的记录
+        </p>
+        <li class="item"><STRONG>手动搭建RPC框架</STRONG>
+        </li>
+        <p>
+        <h4>简介</h4>从0开始搭建RPC框架
+        <h4>具体细节</h4>进程之间通讯只是RPC的一个子集，想通过手动搭建RPC框架更好的去了解分布式系统的大致概念。
+        在未集成Spring的情况下，通过定义服务端以及客户端的相关逻辑，由服务端提供具体的业务代码，客户端调用相应的接口即可，基本原理就是客户端通过基本的接口名称，接口参数，通过Socket方式来传输给服务端，客户端在获取到服务端信息后，通过Java反射机制，来重新包装相应对象，完成相应的函数远程调用。
+        在Spring集成情况下，可以通过注解方式来暴露相应服务，更加方便
+        </p>
+      </div>
     </ul>
    </div>
   
@@ -219,12 +247,25 @@ h2 {
        <li class="item iconfont"> MySql
            <p>熟悉使用MySql语句，能根据相关业务需求梳理数据库，设计出基本的表结构</p>
        </li>
-       <li class="item iconfont"> JavaScript
-            <p>熟悉ES6， 熟悉async异步编程</p>
+       <li class="item iconfont"> 网络协议
+           <p>熟悉基本网络通讯协议</p>
+       </li>
+       <li class="item iconfont"> JavaScript + HTML + CSS
+            <p>熟悉ES6， 熟悉async异步编程，同时了解前端基本语言</p>
        </li>
        <li class="item iconfont"> Redis
            <p>
                熟悉Redis数据库
+           </p>
+       </li>
+       <li class="item iconfont"> Java
+           <p>
+               熟悉Java
+           </p>
+       </li>
+       <li class="item iconfont"> Spring Boot
+           <p>
+               熟悉Spring Boot开发
            </p>
        </li>
        <li class="item iconfont"> Swagger
